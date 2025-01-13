@@ -45,13 +45,18 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100 text-gray-900">
-   <nav class="bg-blue-500 p-4 text-white">
+   <nav class="bg-blue-500 p-4 text-white flex justify-between items-center">
+    {{-- Display the books.index --}}
     <a href="{{ route('books.index') }}" class="font-bold">Books</a>    
-    <a href="{{ route('logout') }}" class="ml-4">Logout</a>    
+
+    {{-- Logout form --}}
+    <form action="{{ route('logout') }}" method="POST" class="inline ml-auto">
+        @csrf
+        <button type="submit" class="ml-4 font-bold">Logout</button>
+    </form>
 </nav> 
-<div class="container mx-auto mt-5">
+<div class="container mx-auto mt-6">
     @yield('content')
 </div>
 </body> 
-
 </html>
