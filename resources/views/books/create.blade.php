@@ -14,7 +14,7 @@
     </div>
     <div class="mb-4">
         <label for="year_book" class="block text-gray-700">Year:</label>
-        <input type="number" name="year_book" id="year_book" class="w-full border rounded px-3 py-2" required>
+        <input type="number" name="year_published" id="year_published" class="w-full border rounded px-3 py-2" required>
     </div>
     <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Save</button>
 </form>

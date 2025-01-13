@@ -26,7 +26,8 @@
         <tr>
             <td class="border px-4 py-2">{{ $book->book_title }}</td>
             <td class="border px-4 py-2">{{ $book->book_author }}</td>
-            <td class="border px-4 py-2">{{ $book->year_book }}</td>
+            <td class="border px-4 py-2">{{ $book->year_published}}</td>
+
             <td class="border px-4 py-2">
                 <a href="{{ route('books.edit', $book->id) }}" class="text-blue-500">Edit</a> |
                 <form action="{{ route('books.destroy', $book->id) }}" method="POST" class="inline">
